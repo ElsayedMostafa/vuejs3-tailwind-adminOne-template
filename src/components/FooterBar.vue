@@ -1,0 +1,27 @@
+<template>
+  <footer class="bg-white py-3 px-6 bottom-0 fixed">
+    <div>
+        <b>&copy; {{ year }}, te.eg</b> &mdash; We Config Demo
+      </div>
+    
+  </footer>
+</template>
+
+<script>
+import { computed } from "vue";
+
+export default {
+  name: "FooterBar",
+  components: {
+  },
+  setup() {
+
+    const year = computed(() => new Date().getFullYear());
+
+
+    return {
+      year,
+    };
+  },
+};
+</script>
