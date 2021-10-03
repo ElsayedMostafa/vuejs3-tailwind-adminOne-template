@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white py-3 px-6 bottom-0 fixed">
+  <footer class="bg-white z-30 h-14 w-screen border-t border-gray-200 py-3 px-6 bottom-0 fixed">
     <div>
         <b>&copy; {{ year }}, te.eg</b> &mdash; We Config Demo
       </div>

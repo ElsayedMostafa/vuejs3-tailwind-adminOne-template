@@ -8,7 +8,7 @@
       flex
       bg-white
       h-14
-      border-b border-gray-100
+      border-b border-gray-200
       z-30
       w-screen
       transition-all
