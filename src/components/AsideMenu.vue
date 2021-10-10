@@ -1,6 +1,6 @@
 <template>
     <aside
-    class="w-60 fixed top-0 z-40 h-screen bg-gray-800 transition-position lg:left-0 overflow-y-scroll
+    class="w-60 fixed top-0 z-40 h-screen bg-gray-800 transition-position lg:left-0 overflow-y-scroll 
     scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-900 hover:scrollbar-thumb-gray-900"
     :class="[ isAsideMobileExpanded ? 'left-0' : '-left-60', isAsideLgActive ? 'block' : 'lg:hidden xl:block' ]"
   >
@@ -52,12 +52,12 @@ export default {
 
    
 
-    const isAsideMobileExpanded = computed(() => store.state.isAsideMobileExpanded)
+    const isAsideMobileExpanded = computed(() => store.state.ui.isAsideMobileExpanded)
 
-    const isAsideLgActive = computed(() => store.state.isAsideLgActive)
+    const isAsideLgActive = computed(() => store.state.ui.isAsideLgActive)
 
     const asideLgClose = () => {
-      store.dispatch('asideLgToggle', false)
+      store.dispatch('ui/asideLgToggle', false)
     }
 
     const menuClick = (event, item) => {

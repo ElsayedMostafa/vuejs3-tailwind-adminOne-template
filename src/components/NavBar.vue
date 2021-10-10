@@ -96,14 +96,14 @@ export default {
   setup() {
     const store = useStore();
     const isAsideMobileExpanded = computed(
-      () => store.state.isAsideMobileExpanded
+      () => store.state.ui.isAsideMobileExpanded
     );
     const menuToggleMobileIcon = computed(() =>
       isAsideMobileExpanded.value ? mdiBackburger : mdiForwardburger
     );
     const isMenuNavBarActive = ref(false);
 
-    const menuToggleMobile = () => store.dispatch("asideMobileToggle");
+    const menuToggleMobile = () => store.dispatch("ui/asideMobileToggle");
 
     const menuNavBarToggleIcon = computed(() =>
       isMenuNavBarActive.value ? mdiClose : mdiDotsVertical
@@ -114,7 +114,7 @@ export default {
     };
 
     const menuOpenLg = () => {
-      store.dispatch("asideLgToggle", true);
+      store.dispatch("ui/asideLgToggle", true);
     };
 
     return {

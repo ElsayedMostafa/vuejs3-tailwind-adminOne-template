@@ -5,4 +5,9 @@ import router from './router'
 import './assets/tailwind.css';
 import './assets/main.css';
 
-createApp(App).use(router).use(store).mount('#app')
+
+store.dispatch('auth/attempt', localStorage.getItem('token'))
+.then(()=>{
+    createApp(App).use(router).use(store).mount('#app')
+})
+

@@ -1,9 +1,9 @@
 import {
   mdiAccountCircle,
   mdiDesktopMac,
-  mdiGithub,
+  //mdiGithub,
   mdiLock,
-  mdiMonitor,
+  //mdiMonitor,
   mdiSquareEditOutline,
   mdiTable,
   mdiViewList,
@@ -67,17 +67,17 @@ export default [
       ]
     }
   ],
-  'About',
-  [
-    {
-      href: 'https://tailwind-vue.justboil.me/',
-      label: 'Premium version',
-      icon: mdiMonitor
-    },
-    {
-      href: 'https://github.com/justboil/admin-one-vue-tailwind',
-      label: 'GitHub',
-      icon: mdiGithub
-    }
-  ]
+  // 'About',
+  // [
+  //   {
+  //     href: 'https://tailwind-vue.justboil.me/',
+  //     label: 'Premium version',
+  //     icon: mdiMonitor
+  //   },
+  //   {
+  //     href: 'https://github.com/justboil/admin-one-vue-tailwind',
+  //     label: 'GitHub',
+  //     icon: mdiGithub
+  //   }
+  // ]
 ]
